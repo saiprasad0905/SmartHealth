@@ -42,7 +42,8 @@ const Dashboard = () => {
 
     return (
         <div className="dashboard-container">
-            <h1>Welcome Dr. User</h1>
+            <nav className='Sai'>
+            <h1>Welcome Dr. Sai</h1></nav>
             
             <div className="stats-cards">
                 <div className="stat-card">

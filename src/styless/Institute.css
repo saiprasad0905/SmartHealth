@@ -1,0 +1,121 @@
+.institutes-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.institutes-header {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px; /* Space for sidebar */
+}
+
+.institutes-header h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.institutes-header h2 {
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.search-icon {
+    color: #999;
+}
+
+.institutes-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.institutes-table th {
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    text-align: left;
+    color: #555;
+    font-weight: 600;
+    border-bottom: 2px solid #eee;
+}
+
+.institutes-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.institutes-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.view-more-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.view-more-btn:hover {
+    background-color: #3a7bc8;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    position: fixed;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.sidebar-header {
+    padding: 0 20px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

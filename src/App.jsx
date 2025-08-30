@@ -5,6 +5,7 @@ import Login from './components/Login';
 import Signup from './components/Signup'; // Import Signup component
 import './App.css';
 import First from './components/First'; // Import First component
+import Institutes from './components/Institutes';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 {/* Route for Signup */}
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/first" element={<First />} />
+                <Route path="/institutes" element={<Institutes />} />
             </Routes>
         </Router>
     );

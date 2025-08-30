@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faUser, faBuilding, faTimes } from '@fortawesome/free-solid-svg-icons';
 import '../styless/Medicines.css';  // Add this import
+import { useNavigate } from 'react-router-dom';
 
 const Medicines = () => {
     const [activeTab, setActiveTab] = useState('batches');
@@ -16,20 +17,11 @@ const Medicines = () => {
         { name: 'Paracetamol', batchNumber: 'B123', expiryDate: '2025-12-31', owner: 'John Doe', status: 'Active' },
         { name: 'Ibuprofen', batchNumber: 'B124', expiryDate: '2025-11-30', owner: 'Jane Smith', status: 'Active' },
         { name: 'dolo', batchNumber: 'b213', expiryDate: '2025-06-09', owner: 'sai', status: 'Active' },
-        { name: 'dolo', batchNumber: 'C1234', expiryDate: '2025-05-09', owner: 'saip', status: 'Expires in 2 months' },
+        { name: 'dolo', batchNumber: 'C1234', expiryDate: '2025-05-09', owner: 'saip', status: 'Expired' },
     ]);
+    const navigate = useNavigate();
 
-    const calculateStatus = (expiryDate) => {
-        const today = new Date();
-        const expiry = new Date(expiryDate);
-        const twoMonths = 1000 * 60 * 60 * 24 * 60; // 60 days in milliseconds
-        
-        if (expiry - today <= twoMonths) {
-            return 'Expires in 2 months';
-        }
-        return 'Active';
-    };
-
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         const status = calculateStatus(newBatch.expiryDate);
@@ -53,7 +45,7 @@ const Medicines = () => {
                     </button>
                     <button 
                         className={`tab ${activeTab === 'institutes' ? 'active' : ''}`}
-                        onClick={() => setActiveTab('institutes')}
+                        onClick={() => navigate('/institutes')}
                     >
                         <FontAwesomeIcon icon={faBuilding} /> Institutes
                     </button>
