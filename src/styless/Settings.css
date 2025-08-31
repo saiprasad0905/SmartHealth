@@ -1,0 +1,102 @@
+.settings-container {
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+    .settings-container {
+        padding: 15px;
+    }
+
+    .settings-content {
+        gap: 20px;
+    }
+
+    .settings-section {
+        padding: 15px;
+    }
+
+    .setting-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .setting-item select,
+    .setting-item button {
+        width: 100%;
+    }
+}
+
+.settings-header {
+    margin-bottom: 30px;
+}
+
+.settings-header h2 {
+    color: var(--text-primary);
+    font-size: 24px;
+    margin: 0;
+}
+
+.settings-content {
+    display: grid;
+    gap: 30px;
+}
+
+.settings-section {
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.settings-section h3 {
+    color: #2c3e50;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.setting-item:last-child {
+    border-bottom: none;
+}
+
+.setting-item label {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.setting-item select {
+    padding: 8px 12px;
+    border: 1px solid var(--border-medium);
+    border-radius: 6px;
+    min-width: 150px;
+}
+
+.setting-item button {
+    padding: 8px 16px;
+    background-color: var(--primary-accent);
+    color: var(--bg-white);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.setting-item button:hover {
+    background-color: var(--primary-accent-dark);
+}
+
+.setting-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}

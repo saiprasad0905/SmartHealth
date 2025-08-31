@@ -5,12 +5,12 @@ body {
 }
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  color:black;
-  
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: black;
+  display: flex;
 }
 .h2{
   color: #646cff;

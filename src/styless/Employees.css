@@ -1,0 +1,108 @@
+.employees-container {
+    padding: 20px;
+    background-color: var(--bg-primary);
+}
+
+.employees-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.employees-header h2 {
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.add-employee {
+    padding: 10px 20px;
+    background-color: var(--success);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.employees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.employee-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.employee-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    font-size: 24px;
+}
+
+.employee-info h3 {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.employee-info p {
+    margin: 5px 0 0;
+    color: var(--text-secondary);
+}
+
+.employee-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.stat-box {
+    padding: 10px;
+    background-color: var(--bg-secondary);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.stat-box h4 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 20px;
+}
+
+.stat-box p {
+    margin: 5px 0 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .employees-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .employees-grid {
+        grid-template-columns: 1fr;
+    }
+}
