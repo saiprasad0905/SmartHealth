@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faUser, faBuilding, faTimes } from '@fortawesome/free-solid-svg-icons';
 import '../styless/Medicines.css';  // Add this import
 import { useNavigate } from 'react-router-dom';
+import Footer from './Footer';
 
 const Medicines = () => {
     const [activeTab, setActiveTab] = useState('batches');
@@ -170,6 +171,7 @@ const Medicines = () => {
                     </div>
                 </div>
             )}
+            {/* <Footer /> */}
         </div>
     );
 };

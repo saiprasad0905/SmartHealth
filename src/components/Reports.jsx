@@ -5,7 +5,7 @@ const Reports = () => {
     return (
         <div className="reports-container">
             <h2>Reports</h2>
-            {/* Add your reports content here */}
+            {<ul><h1><center>Underconstruction</center></h1></ul>}
         </div>
     );
 };

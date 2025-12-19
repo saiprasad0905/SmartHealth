@@ -6,7 +6,8 @@ import Signup from './components/Signup'; // Import Signup component
 import './App.css';
 import First from './components/First'; // Import First component
 import Institutes from './components/Institutes';
-
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 function App() {
     return (
         <Router>
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/first" element={<First />} />
                 <Route path="/institutes" element={<Institutes />} />
+                library.add(fas)
             </Routes>
         </Router>
     );

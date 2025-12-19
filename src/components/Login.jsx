@@ -39,7 +39,8 @@ const Login = () => {
     };
 
     const handleGoogleSignIn = () => {
-        // Implement Google Sign-in logic
+        //  navigate('/Googlesignin');
+      alert('Google Sign-In is currently under construction.');
     };
 
     return (

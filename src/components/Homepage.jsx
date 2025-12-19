@@ -4,6 +4,7 @@ import '../styless/Homepage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeartbeat, faPills, faStethoscope, faUserMd, faHospital, faNotesMedical } from '@fortawesome/free-solid-svg-icons';
 
+
 const Homepage = () => {
     const navigate = useNavigate();
 
@@ -33,8 +34,10 @@ const Homepage = () => {
                     </button>
                 </div>
             </div>
+            <Footer />
         </div>
     );
 };
+
 
 export default Homepage;
